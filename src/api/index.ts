@@ -1,18 +1,18 @@
-import dotenv from 'dotenv';
-const envFilePath = (() => {
-    switch (process.env.NODE_ENV) {
-        case 'production':
-            return '../configs/.env.prod';
-        case 'development':
-            return '../configs/.env.dev';
-        case 'test':
-            return '../configs/.env.test';
-        default:
-            return '../configs/.env';
-    }
-})();
+// import dotenv from 'dotenv';
+// const envFilePath = (() => {
+//     switch (process.env.NODE_ENV) {
+//         case 'production':
+//             return '../configs/.env';
+//         case 'development':git
+//             return '../configs/.env.dev';
+//         case 'test':
+//             return '../configs/.env.test';
+//         default:
+//             return '../configs/.env';
+//     }
+// })();
 
-dotenv.config({ path: envFilePath });
+// dotenv.config({ path: envFilePath });
 
 import { createApp } from './app';
 // import mongoose from 'mongoose';
